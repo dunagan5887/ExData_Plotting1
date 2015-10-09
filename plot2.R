@@ -2,6 +2,7 @@ source('./load_data_from_file.R');
 
 powerConsumptionDataFrame <- getPowerUsageDataFrame();
 
+par(mfrow = c(1,1))
 plot(x=powerConsumptionDataFrame$Time, 
      y=powerConsumptionDataFrame$Global_active_power,
      type="l",
